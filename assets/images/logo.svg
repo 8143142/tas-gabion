@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 72" role="img" aria-label="TAS-GABION">
+  <g transform="translate(36,36)">
+    <polygon points="0,-28 28,0 0,28 -28,0" fill="none" stroke="#00d4ff" stroke-width="2.2" stroke-linejoin="round"/>
+    <g stroke="#c8d4de" stroke-width="1" fill="none" stroke-linejoin="round">
+      <path d="M-18 2 L0 -10 L18 2 L18 18 L0 30 L-18 18 Z"/>
+      <path d="M-18 2 L0 -10 L18 2 L0 14 Z"/>
+      <path d="M18 2 L0 14 L0 30 L18 18 Z"/>
+      <line x1="-6" y1="4" x2="-6" y2="22"/>
+      <line x1="6" y1="4" x2="6" y2="22"/>
+      <line x1="-18" y1="10" x2="18" y2="10"/>
+      <line x1="-18" y1="18" x2="18" y2="18"/>
+      <line x1="-6" y1="-4" x2="6" y2="4"/>
+      <line x1="6" y1="-4" x2="-6" y2="4"/>
+    </g>
+  </g>
+  <text x="78" y="44" fill="#e8edf2" font-family="Rajdhani, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="3">TAS-GABION</text>
+</svg>

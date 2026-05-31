@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="TAS-GABION — габионные заборы, беседки и конструкции под ключ в Казахстане. Прочность, стиль и монтаж от профессионалов.">
+  <title>TAS-GABION | Габионы под ключ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css?v=30">
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo logo--brand">
+        <img src="assets/images/logo.svg?v=3" alt="TAS-GABION" width="200" height="52" class="logo__img">
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#about">О нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#gabion">О габионах</a>
+        <a href="#showreel">Видео</a>
+        <a href="#faq">Вопросы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <div class="header__actions">
+        <a href="#contact" class="btn btn--primary btn--sm">Заказать расчёт</a>
+        <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <video class="hero__video" autoplay muted loop playsinline poster="assets/images/01-fence.jpg">
+        <source src="assets/video/style.mp4" type="video/mp4">
+      </video>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <div class="hero__text" data-reveal>
+          <p class="hero__tag">Астана и весь Казахстан</p>
+          <h1>Габион — когда <span class="text-accent">прочность</span> встречает стиль</h1>
+          <p class="hero__lead">
+            Заборы, беседки, подпорные стены и ландшафтные конструкции из камня и металла — проектирование, поставка и монтаж под ключ.
+          </p>
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary btn--glow">Рассчитать проект</a>
+            <a href="https://www.instagram.com/tasgabion/" target="_blank" rel="noopener" class="btn btn--outline">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              @tasgabion
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Листайте</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats__grid">
+        <div class="stat" data-reveal>
+          <span class="stat__num" data-count="50">0</span><span class="stat__suffix">+</span>
+          <span class="stat__label">объектов</span>
+        </div>
+        <div class="stat" data-reveal data-delay="100">
+          <span class="stat__num" data-count="100">0</span><span class="stat__suffix">%</span>
+          <span class="stat__label">под ключ</span>
+        </div>
+        <div class="stat" data-reveal data-delay="200">
+          <span class="stat__label stat__label--text">Астана</span>
+          <span class="stat__label">и регионы РК</span>
+        </div>
+        <div class="stat" data-reveal data-delay="300">
+          <span class="stat__label stat__label--text">4 мм</span>
+          <span class="stat__label">оцинкованная сетка</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about__layout">
+          <div class="section__head" data-reveal>
+            <span class="section__eyebrow">TAS-GABION</span>
+            <h2>Современные габионные решения для дома и бизнеса</h2>
+            <p class="section__desc">
+              Камень, металл и продуманная конструкция — в одном изделии. Мы делаем ограждения и архитектурные формы, которые служат десятилетиями и выглядят актуально.
+            </p>
+          </div>
+          <div class="about__grid">
+            <div class="about__card" data-reveal>
+              <h3>Заборы под ключ</h3>
+              <p>Современные габионные ограждения с калитками и откатными воротами — прочность без компромиссов по эстетике.</p>
+            </div>
+            <div class="about__card about__card--accent" data-reveal data-delay="100">
+              <h3>Беседки и зоны отдыха</h3>
+              <p>Беседки, скамейки, столы на габионном основании — для частных участков, отелей и ресторанов.</p>
+            </div>
+            <div class="about__card" data-reveal data-delay="200">
+              <h3>Коммерческие объекты</h3>
+              <p>Отели, коттеджные посёлки, ландшафтные проекты — от эскиза до сдачи объекта.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="gabion">
+      <div class="container">
+        <div class="section__head section__head--center" data-reveal>
+          <span class="section__eyebrow">О материале</span>
+          <h2>Преимущества и особенности габионных конструкций</h2>
+        </div>
+        <div class="features__grid">
+          <article class="feature-card" data-reveal>
+            <h3>Надёжность</h3>
+            <p>Высокая прочность каркаса из оцинкованной проволоки — конструкция служит десятилетиями.</p>
+          </article>
+          <article class="feature-card" data-reveal data-delay="50">
+            <h3>Водопроницаемость</h3>
+            <p>Вода свободно проходит сквозь камень — нет гидродавления, не нужна отдельная дренажная система.</p>
+          </article>
+          <article class="feature-card" data-reveal data-delay="100">
+            <h3>Простой монтаж</h3>
+            <p>Не требуется массивный фундамент — достаточно подготовленного основания.</p>
+          </article>
+          <article class="feature-card" data-reveal data-delay="150">
+            <h3>Экологичность</h3>
+            <p>Натуральный камень и металл — безопасные материалы для участка и окружающей среды.</p>
+          </article>
+          <article class="feature-card" data-reveal data-delay="200">
+            <h3>Приватность</h3>
+            <p>Плотное наполнение закрывает участок от посторонних глаз и снижает уличный шум.</p>
+          </article>
+          <article class="feature-card" data-reveal data-delay="250">
+            <h3>Универсальность</h3>
+            <p>Сочетается с деревом, металлом, подсветкой и озеленением — вписывается в любой ландшафт.</p>
+          </article>
+        </div>
+
+        <div class="mesh-specs" data-reveal>
+          <div class="mesh-specs__info">
+            <span class="section__eyebrow">Материалы</span>
+            <h3>Габионная сетка — характеристики</h3>
+            <p>Для каркасов и ограждений используем оцинкованную проволоку по ГОСТ — прочную, устойчивую к коррозии и подходящую для долговечных конструкций.</p>
+          </div>
+          <dl class="mesh-specs__params">
+            <div class="mesh-specs__param">
+              <dt>Диаметр проволоки</dt>
+              <dd>4 мм</dd>
+            </div>
+            <div class="mesh-specs__param">
+              <dt>Размер ячейки</dt>
+              <dd>50 × 100 мм</dd>
+            </div>
+            <div class="mesh-specs__param">
+              <dt>Формат рулона</dt>
+              <dd>2 × 52 м</dd>
+            </div>
+            <div class="mesh-specs__param">
+              <dt>Покрытие</dt>
+              <dd>Оцинковка</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section section--dark" id="services">
+      <div class="container">
+        <div class="section__head section__head--center" data-reveal>
+          <span class="section__eyebrow">Услуги</span>
+          <h2>Что мы изготавливаем</h2>
+        </div>
+        <div class="services__grid">
+          <article class="service-card" data-reveal>
+            <img src="assets/images/01-fence.jpg?v=1" alt="Забор из габиона" loading="lazy" width="600" height="400">
+            <div class="service-card__body">
+              <h3>Заборы и ворота</h3>
+              <p>Ограждения из габиона с металлическими секциями — Астана и регионы.</p>
+            </div>
+          </article>
+          <article class="service-card" data-reveal data-delay="50">
+            <img src="assets/images/02-wall.jpg?v=1" alt="Габионная стена" loading="lazy" width="600" height="400">
+            <div class="service-card__body">
+              <h3>Габионные стены</h3>
+              <p>Подпорные и декоративные стены из камня в металлической сетке.</p>
+            </div>
+          </article>
+          <article class="service-card" data-reveal data-delay="100">
+            <img src="assets/images/03-light.jpg?v=1" alt="Забор на габионном основании" loading="lazy" width="600" height="400">
+            <div class="service-card__body">
+              <h3>Забор на габионном основании</h3>
+              <p>Деревянные или металлические секции на каменном габионном фундаменте.</p>
+            </div>
+          </article>
+          <article class="service-card" data-reveal data-delay="150">
+            <img src="assets/images/04-gazebo.jpg?v=1" alt="Скамейка из габиона" loading="lazy" width="600" height="400">
+            <div class="service-card__body">
+              <h3>Скамейки из габиона</h3>
+              <p>Массивные скамейки на габионном основании — для парков, отелей и частных участков.</p>
+            </div>
+          </article>
+          <article class="service-card" data-reveal data-delay="200">
+            <img src="assets/images/05-gazebo-site.jpg?v=1" alt="Декоративный забор" loading="lazy" width="600" height="400">
+            <div class="service-card__body">
+              <h3>Декоративные заборы</h3>
+              <p>Габион с металлическими горизонтальными секциями и вставками.</p>
+            </div>
+          </article>
+          <article class="service-card" data-reveal data-delay="250">
+            <img src="assets/images/06-gazebo-round.jpg?v=1" alt="Столбы из габиона" loading="lazy" width="600" height="400">
+            <div class="service-card__body">
+              <h3>Столбы из габиона</h3>
+              <p>Опоры для профлиста, секционных и комбинированных ограждений.</p>
+            </div>
+          </article>
+          <article class="service-card" data-reveal data-delay="300">
+            <img src="assets/images/07-bench.jpg?v=1" alt="Клумба из габиона" loading="lazy" width="600" height="400">
+            <div class="service-card__body">
+              <h3>Клумбы и цветники</h3>
+              <p>Высокие габионные клумбы для растений и озеленения участка.</p>
+            </div>
+          </article>
+        </div>
+        <p class="services__more" data-reveal>
+          Больше работ — в <a href="https://www.instagram.com/tasgabion/" target="_blank" rel="noopener">Instagram @tasgabion</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="process section" id="process">
+      <div class="container">
+        <div class="section__head section__head--center" data-reveal>
+          <span class="section__eyebrow">Как мы работаем</span>
+          <h2>От заявки до готового объекта</h2>
+        </div>
+        <ol class="process__steps">
+          <li class="process__step" data-reveal>
+            <span class="process__num">1</span>
+            <div>
+              <h3>Заявка и консультация</h3>
+              <p>Обсуждаем задачу, показываем примеры работ, отвечаем на вопросы по материалу и срокам.</p>
+            </div>
+          </li>
+          <li class="process__step" data-reveal data-delay="80">
+            <span class="process__num">2</span>
+            <div>
+              <h3>Замер и расчёт</h3>
+              <p>Выезжаем на объект, снимаем размеры, подбираем камень и сетку, готовим смету.</p>
+            </div>
+          </li>
+          <li class="process__step" data-reveal data-delay="160">
+            <span class="process__num">3</span>
+            <div>
+              <h3>Изготовление</h3>
+              <p>Готовим каркасы, комплектующие и материалы — всё под ваш проект.</p>
+            </div>
+          </li>
+          <li class="process__step" data-reveal data-delay="240">
+            <span class="process__num">4</span>
+            <div>
+              <h3>Монтаж и сдача</h3>
+              <p>Устанавливаем конструкцию, заполняем габионы камнем, сдаём объект под ключ.</p>
+            </div>
+          </li>
+        </ol>
+        <p class="process__cta" data-reveal>
+          <a href="#contact" class="btn btn--primary">Получить расчёт</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="showreel section" id="showreel">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <span class="section__eyebrow">Наши работы</span>
+          <h2>Видео с объектов</h2>
+        </div>
+        <div class="showreel__grid">
+          <article class="video-card video-card--featured" data-reveal>
+            <div class="video-card__wrap">
+              <video controls playsinline preload="metadata" poster="assets/images/01-fence.jpg">
+                <source src="assets/video/fence-astana.mp4" type="video/mp4">
+              </video>
+            </div>
+            <h3>Заборы из габиона под ключ в Астане</h3>
+            <p>Современный, прочный и стильный забор для вашего участка.</p>
+          </article>
+          <article class="video-card" data-reveal data-delay="100">
+            <div class="video-card__wrap">
+              <video controls playsinline preload="metadata" poster="assets/images/07-bench.jpg">
+                <source src="assets/video/bench-altai.mp4" type="video/mp4">
+              </video>
+            </div>
+            <h3>Скамейка из габиона</h3>
+            <p>Отель «Алтай Ресорт», Щучинск.</p>
+          </article>
+          <article class="video-card" data-reveal data-delay="200">
+            <div class="video-card__wrap">
+              <video controls playsinline preload="metadata" poster="assets/images/02-wall.jpg">
+                <source src="assets/video/style.mp4" type="video/mp4">
+              </video>
+            </div>
+            <h3>Прочность и стиль</h3>
+            <p>Камень, металл и идея в одной конструкции.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="applications section section--dark" id="applications">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Заборы</span><span>·</span>
+          <span>Беседки</span><span>·</span>
+          <span>Отели</span><span>·</span>
+          <span>Ландшафт</span><span>·</span>
+          <span>Подпорные стены</span><span>·</span>
+          <span>Коттеджи</span><span>·</span>
+          <span>Заборы</span><span>·</span>
+          <span>Беседки</span><span>·</span>
+          <span>Отели</span><span>·</span>
+          <span>Ландшафт</span><span>·</span>
+          <span>Подпорные стены</span><span>·</span>
+          <span>Коттеджи</span><span>·</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section section--dark" id="faq">
+      <div class="container">
+        <div class="section__head section__head--center" data-reveal>
+          <span class="section__eyebrow">FAQ</span>
+          <h2>Частые вопросы</h2>
+        </div>
+        <div class="faq__list">
+          <details class="faq__item" data-reveal>
+            <summary>Сколько служит габионный забор или стена?</summary>
+            <p>При качественной сетке, правильной укладке камня и монтаже конструкция служит 30–50 лет и дольше. Мы используем оцинкованную проволоку и плотное заполнение, чтобы срок был максимальным.</p>
+          </details>
+          <details class="faq__item" data-reveal data-delay="50">
+            <summary>Нужен ли фундамент под габион?</summary>
+            <p>Массивная ленточная основа обычно не требуется — достаточно подготовленного, выровненного основания. Для высоких подпорных стен на склоне проект рассчитывается отдельно с учётом нагрузки.</p>
+          </details>
+          <details class="faq__item" data-reveal data-delay="100">
+            <summary>Какую сетку вы используете?</summary>
+            <p>Оцинкованная габионная сетка: диаметр проволоки 4 мм, ячейка 50 × 100 мм. Поставляем в рулонах формата 2 × 52 м — подходит для заборов, стен, столбов и других конструкций. Качество — по ГОСТ.</p>
+          </details>
+          <details class="faq__item" data-reveal data-delay="150">
+            <summary>Какой камень вы используете?</summary>
+            <p>Подбираем твёрдые породы — гранитную или базальтовую крошку, гальку, песчаник. Камень должен быть однородным по фракции, чтобы сетка не «разъезжалась» и выглядела аккуратно.</p>
+          </details>
+          <details class="faq__item" data-reveal data-delay="200">
+            <summary>Можно ли совместить габион с деревом или металлом?</summary>
+            <p>Да, это один из наших основных форматов: габионные столбы и цоколь + деревянные или металлические секции, калитки и ворота в едином стиле.</p>
+          </details>
+          <details class="faq__item" data-reveal data-delay="250">
+            <summary>Какие сроки изготовления и монтажа?</summary>
+            <p>Зависят от объёма и сложности. Небольшой забор — от нескольких дней монтажа после согласования проекта. Точные сроки называем после замера и расчёта.</p>
+          </details>
+          <details class="faq__item" data-reveal data-delay="300">
+            <summary>Работаете ли вы за пределами Астаны?</summary>
+            <p>Да, выезжаем по регионам Казахстана. Стоимость доставки и монтажа уточняем при расчёте — зависит от удалённости и объёма работ.</p>
+          </details>
+        </div>
+        <p class="faq__more" data-reveal>
+          Не нашли ответ? <a href="#contact">Напишите нам</a> — ответим в течение рабочего дня.
+        </p>
+      </div>
+    </section>
+
+    <section class="cta section section--accent" id="contact">
+      <div class="container cta__grid">
+        <div class="cta__info" data-reveal>
+          <span class="section__eyebrow">Связаться</span>
+          <h2>Обсудим ваш проект</h2>
+          <p>Замер, расчёт стоимости и сроки — бесплатная консультация.</p>
+          <div class="cta__links">
+            <a href="https://www.instagram.com/tasgabion/" target="_blank" rel="noopener" class="cta__social">@tasgabion</a>
+            <a href="tel:+77056854689" class="cta__phone">+7 (705) 685-46-89</a>
+          </div>
+        </div>
+        <form class="form" id="contactForm" data-reveal data-delay="150" data-whatsapp="77056854689">
+          <div class="form__row">
+            <label>
+              <span>Имя</span>
+              <input type="text" name="name" required placeholder="Ваше имя" autocomplete="name">
+            </label>
+            <label>
+              <span>Телефон</span>
+              <input type="tel" name="phone" required placeholder="+7 (___) ___-__-__" autocomplete="tel">
+            </label>
+          </div>
+          <label>
+            <span>Что интересует</span>
+            <select name="product">
+              <option value="">Выберите</option>
+              <option>Забор / ворота</option>
+              <option>Беседка / зона отдыха</option>
+              <option>Подпорная стена</option>
+              <option>Коммерческий объект</option>
+              <option>Другое</option>
+            </select>
+          </label>
+          <label>
+            <span>Сообщение</span>
+            <textarea name="message" rows="3" placeholder="Город, размеры, пожелания…"></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary btn--glow btn--full">Написать в <span class="btn__wa">WhatsApp</span></button>
+          <p class="form__success" id="formSuccess" hidden>Открываем WhatsApp с вашей заявкой. Если окно не открылось — напишите нам по кнопке справа внизу.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo logo--footer logo--brand">
+        <img src="assets/images/logo.svg?v=3" alt="TAS-GABION" width="180" height="48" class="logo__img">
+      </a>
+      <p>© <span id="year"></span> TAS-GABION. Казахстан.</p>
+      <a href="https://www.instagram.com/tasgabion/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- Левый виджет: ИИ-помощник -->
+  <aside class="side-widget side-widget--left" aria-label="Помощник на сайте">
+    <div class="assistant-panel" id="assistantPanel" hidden aria-hidden="true">
+      <header class="assistant-panel__head">
+        <div class="assistant-panel__title-wrap">
+          <span class="assistant-panel__eyebrow">Помощник сайта</span>
+          <strong class="assistant-panel__title">TAS-GABION</strong>
+        </div>
+        <button type="button" class="assistant-panel__close" id="assistantClose" aria-label="Закрыть">&times;</button>
+      </header>
+      <div class="assistant-panel__body">
+        <div class="assistant__welcome">
+          <p>Я AI-ассистент сайта TAS-GABION. Подскажу по услугам, срокам, материалам и расчёту проекта.</p>
+          <a href="#services" class="assistant__welcome-btn">Смотреть услуги</a>
+        </div>
+        <div class="assistant__quick" id="assistantQuick"></div>
+        <div class="assistant__messages" id="assistantMessages" role="log" aria-live="polite"></div>
+      </div>
+      <footer class="assistant-panel__foot">
+        <form class="assistant__form" id="assistantForm">
+          <input type="text" id="assistantInput" placeholder="Напишите вопрос…" autocomplete="off" maxlength="500" aria-label="Ваш вопрос">
+          <button type="submit" class="assistant__send" id="assistantSend" aria-label="Отправить">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+      </footer>
+    </div>
+    <button type="button" class="assistant-launcher" id="assistantToggle" aria-expanded="false" aria-controls="assistantPanel" aria-label="Открыть помощника">
+      <svg class="assistant-launcher__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M6 8.5C6 6.567 7.567 5 9.5 5h13c1.933 0 3.5 1.567 3.5 3.5v9c0 1.933-1.567 3.5-3.5 3.5H14l-5.5 4.2V22.5H9.5C7.567 22.5 6 20.933 6 19V8.5z" fill="currentColor"/>
+        <circle cx="12.25" cy="14" r="1.6" fill="#0a1620"/>
+        <circle cx="16" cy="14" r="1.6" fill="#0a1620"/>
+        <circle cx="19.75" cy="14" r="1.6" fill="#0a1620"/>
+        <path d="M23.2 7.2l.55 1.15 1.15.55-1.15.55-.55 1.15-.55-1.15-1.15-.55 1.15-.55.55-1.15z" fill="currentColor"/>
+        <path d="M25.5 11.2h1.35M26.15 10.55v1.35" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </aside>
+
+  <!-- Правый виджет: соцсети -->
+  <aside class="side-widget side-widget--right" aria-label="Социальные сети">
+    <nav class="social-rail">
+      <a href="https://www.instagram.com/tasgabion/" class="social-rail__link social-rail__link--ig" target="_blank" rel="noopener" aria-label="Instagram @tasgabion">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        <span class="social-rail__tip">Instagram</span>
+      </a>
+      <a href="https://wa.me/77056854689" class="social-rail__link social-rail__link--wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="social-rail__tip">WhatsApp</span>
+      </a>
+      <a href="tel:+77056854689" class="social-rail__link social-rail__link--phone" aria-label="Позвонить">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="social-rail__tip">Позвонить</span>
+      </a>
+    </nav>
+  </aside>
+
+  <script src="js/main.js?v=2"></script>
+  <script src="js/assistant.js"></script>
+</body>
+</html>

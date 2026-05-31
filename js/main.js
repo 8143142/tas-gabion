@@ -190,7 +190,7 @@
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const waPhone = (form.dataset.whatsapp || '77056854689').replace(/\D/g, '');
+      const waPhone = (form.dataset.whatsapp || '77716066627').replace(/\D/g, '');
       const data = new FormData(form);
       const name = (data.get('name') || '').toString().trim();
       const phone = (data.get('phone') || '').toString().trim();

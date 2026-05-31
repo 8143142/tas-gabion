@@ -921,8 +921,18 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   pointer-events: none;
 }
 .side-widget > * { pointer-events: auto; }
-.side-widget--left { left: 1.25rem; align-items: flex-start; }
-.side-widget--right { right: 1rem; align-items: flex-end; }
+.side-widget--left { left: 1.25rem; align-items: flex-start; z-index: 901; }
+.side-widget--right {
+  right: 1rem;
+  align-items: flex-end;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+body.assistant-open .side-widget--right {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(12px);
+}
 
 /* Assistant — layout from reference, colors from site theme */
 .assistant-panel {

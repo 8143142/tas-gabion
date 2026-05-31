@@ -382,6 +382,7 @@
     });
 
     const setOpen = (open) => {
+      document.body.classList.toggle('assistant-open', open);
       if (open) {
         panel.hidden = false;
         panel.setAttribute('aria-hidden', 'false');

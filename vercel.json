@@ -8,6 +8,13 @@
       "headers": [
         { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
       ]
+    },
+    {
+      "source": "/favicon.svg",
+      "headers": [
+        { "key": "Content-Type", "value": "image/svg+xml" },
+        { "key": "Cache-Control", "value": "public, max-age=604800" }
+      ]
     }
   ]
 }
